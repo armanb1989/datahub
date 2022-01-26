@@ -58,6 +58,7 @@ Sources:
 | [openapi](./source_docs/openapi.md)                             | `pip install 'acryl-datahub[openapi]'`                     | OpenApi Source                      |
 | [oracle](./source_docs/oracle.md)                               | `pip install 'acryl-datahub[oracle]'`                      | Oracle source                       |
 | [postgres](./source_docs/postgres.md)                           | `pip install 'acryl-datahub[postgres]'`                    | Postgres source                     |
+| [vertica](./source_docs/vertica.md)                             | `pip install 'acryl-datahub[vertica]'`                     | Vertica source                     |
 | [redash](./source_docs/redash.md)                               | `pip install 'acryl-datahub[redash]'`                      | Redash source                       |
 | [redshift](./source_docs/redshift.md)                           | `pip install 'acryl-datahub[redshift]'`                    | Redshift source                     |
 | [sagemaker](./source_docs/sagemaker.md)                         | `pip install 'acryl-datahub[sagemaker]'`                   | AWS SageMaker source                |

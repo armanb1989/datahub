@@ -127,6 +127,7 @@ plugins: Dict[str, Set[str]] = {
     "okta": {"okta~=1.7.0"},
     "oracle": sql_common | {"cx_Oracle"},
     "postgres": sql_common | {"psycopg2-binary", "GeoAlchemy2"},
+    "vertica": sql_common | {"verticapy"},
     "redash": {"redash-toolbelt", "sql-metadata", "sqllineage==1.3.3"},
     "redshift": sql_common
     | {"sqlalchemy-redshift", "psycopg2-binary", "GeoAlchemy2", "sqllineage==1.3.3"},
@@ -212,6 +213,7 @@ base_dev_requirements = {
             "okta",
             "oracle",
             "postgres",
+            "vertica",
             "sagemaker",
             "datahub-kafka",
             "datahub-rest",
@@ -299,6 +301,7 @@ entry_points = {
         "okta = datahub.ingestion.source.identity.okta:OktaSource",
         "oracle = datahub.ingestion.source.sql.oracle:OracleSource",
         "postgres = datahub.ingestion.source.sql.postgres:PostgresSource",
+        "vertica = datahub.ingestion.source.sql.vertica:VerticaSource",
         "redash = datahub.ingestion.source.redash:RedashSource",
         "redshift = datahub.ingestion.source.sql.redshift:RedshiftSource",
         "redshift-usage = datahub.ingestion.source.usage.redshift_usage:RedshiftUsageSource",
